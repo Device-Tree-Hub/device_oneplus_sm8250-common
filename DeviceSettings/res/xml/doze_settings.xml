@@ -16,9 +16,9 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/org.havoc.device.DeviceSettings">
+	xmlns:settings="http://schemas.android.com/apk/res/org.tenx.device.DeviceSettings">
 
-    <org.havoc.device.DeviceSettings.Preference.SwitchPreference
+    <org.tenx.device.DeviceSettings.Preference.SwitchPreference
         android:key="always_on_display"
         android:disableDependentsState="true"
         android:icon="@drawable/ic_eye"
@@ -44,7 +44,7 @@
         android:key="proximity_sensor"
         android:title="@string/proximity_sensor_title">
 
-        <org.havoc.device.DeviceSettings.Preference.SwitchPreference
+        <org.tenx.device.DeviceSettings.Preference.SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
             android:icon="@drawable/ic_pocket"

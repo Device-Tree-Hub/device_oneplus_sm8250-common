@@ -17,7 +17,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="org.havoc.device.DeviceSettings"
+          package="org.tenx.device.DeviceSettings"
           android:versionCode="2"
           android:versionName="2.0" >
 
@@ -191,7 +191,7 @@
         <!-- Search Indexing -->
         <provider
             android:name=".ConfigPanelSearchIndexablesProvider"
-            android:authorities="org.havoc.device"
+            android:authorities="org.tenx.device"
             android:multiprocess="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.READ_SEARCH_INDEXABLES"
