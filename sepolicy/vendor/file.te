@@ -31,3 +31,6 @@ type sysfs_oem, sysfs_type, fs_type;
 
 # Fingerprint
 type vendor_persist_fingerprint_file, file_type;
+
+# System info
+type sysfs_kgsl, sysfs_type, fs_type;
