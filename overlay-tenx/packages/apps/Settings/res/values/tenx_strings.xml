@@ -23,10 +23,4 @@
    <!-- Maintainer's Telegram username -->
    <string name="maintainer_telegram_username">https://t.me/TenX_OS</string>
 
-    <!-- TenX additional -->
-    <string name="tenx_device_cpu_info">Qualcomm Snapdragon 870</string>
-    <string name="tenx_device_ram_info">8GB</string>
-    <string name="tenx_device_battery_info">4500 mAh</string>
-    <string name="tenx_device_screen_resolution">1080 x 2400</string>
-
 </resources>
