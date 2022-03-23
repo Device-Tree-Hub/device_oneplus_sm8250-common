@@ -26,3 +26,6 @@ allow platform_app vendor_sysfs_battery_supply:dir search;
 allow platform_app vendor_sysfs_battery_supply:file { getattr open read }; 
 allow platform_app vendor_sysfs_kgsl:dir search;
 allow platform_app vendor_sysfs_kgsl:file { getattr open read };
+
+# FPS info
+allow platform_app sysfs_dm:file rw_file_perms;
