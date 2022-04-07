@@ -109,4 +109,8 @@
     <integer name="config_sysCPUTempMultiplier">1000</integer>
     <integer name="config_sysBatteryTempMultiplier">10</integer>
 
+    <!-- OnePlus uses a proprietary vibrator hal to utilize the new powerful motor since the
+         OnePlus 7 Pro. -->
+    <bool name="config_hasOnePlusHapticMotor">true</bool>
+
 </resources>
