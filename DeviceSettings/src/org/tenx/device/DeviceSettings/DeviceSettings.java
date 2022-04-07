@@ -56,6 +56,7 @@ import com.qualcomm.qcrilmsgtunnel.IQcrilMsgTunnel;
 
 import org.tenx.device.DeviceSettings.Doze.DozeSettingsActivity;
 import org.tenx.device.DeviceSettings.ModeSwitch.*;
+import org.tenx.device.DeviceSettings.kcal.KCalSettingsActivity;
 import org.tenx.device.DeviceSettings.Preference.CustomSeekBarPreference;
 import org.tenx.device.DeviceSettings.Preference.SwitchPreference;
 import org.tenx.device.DeviceSettings.Preference.VibratorStrengthPreference;
@@ -79,6 +80,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_EDGE_TOUCH = "edge_touch";
     public static final String KEY_GAME_SWITCH = "game_mode";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
+    public static final String PREF_DEVICE_KCAL = "device_kcal";
 
     private static final String KEY_ENABLE_DOLBY_ATMOS = "enable_dolby_atmos";
     private static final String PREF_DOZE = "advanced_doze_settings";
@@ -91,6 +93,7 @@ public class DeviceSettings extends PreferenceFragment
     private Vibrator mVibrator;
     private DolbySwitch mDolbySwitch;
     private Preference mDozeSettings;
+    private Preference mKcal;
     private static SwitchPreference mFpsInfo;
     private static ListPreference mFpsInfoPosition;
     private static ListPreference mFpsInfoColor;
@@ -208,6 +211,13 @@ public class DeviceSettings extends PreferenceFragment
             mVibratorStrengthPreference.setEnabled(false);
             mVibratorStrengthPreference.setSummary(getString(R.string.unsupported_feature));
         }
+
+        mKcal = findPreference(PREF_DEVICE_KCAL);
+        mKcal.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
+            startActivity(intent);
+            return true;
+        });
     }
 
     @Override

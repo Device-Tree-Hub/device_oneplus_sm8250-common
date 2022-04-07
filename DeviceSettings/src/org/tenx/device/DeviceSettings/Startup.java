@@ -27,6 +27,7 @@ import androidx.preference.PreferenceManager;
 
 import org.tenx.device.DeviceSettings.Doze.DozeUtils;
 import org.tenx.device.DeviceSettings.ModeSwitch.*;
+import org.tenx.device.DeviceSettings.kcal.KCalSettings;
 import org.tenx.device.DeviceSettings.Services.FPSInfoService;
 import org.tenx.device.DeviceSettings.Utils.Utils;
 
@@ -64,6 +65,7 @@ public class Startup extends BroadcastReceiver {
         }
         DozeUtils.checkDozeService(context);
         DeviceSettings.restoreVibStrengthSetting(context);
+        KCalSettings.restore(context);
     }
 
     private void restore(String file, boolean enabled) {

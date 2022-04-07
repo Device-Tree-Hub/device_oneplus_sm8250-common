@@ -37,6 +37,18 @@
         android:key="graphics"
         android:title="@string/display_title">
 
+        <Preference
+            android:key="device_kcal"
+            android:persistent="false"
+            android:icon="@drawable/ic_kcal"
+            android:title="@string/device_kcal_title"
+            android:summary="@string/kcal_enabled_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.tenx.device.DeviceSettings.kcal.KCalSettingsActivity"
+                android:targetPackage="org.tenx.device.DeviceSettings.kcal" />
+       </Preference>
+
     <Preference
             android:key="dc_dim"
             android:enabled="true"

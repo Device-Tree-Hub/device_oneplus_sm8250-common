@@ -177,6 +177,18 @@
             </intent-filter>
         </service>
 
+         <!-- KCalSettings Activity -->
+        <activity
+            android:name="org.tenx.device.DeviceSettings.kcal.KCalSettingsActivity"
+            android:exported="false"
+            android:label="@string/advanced_settings_kcal">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <!-- Log Tile Service -->
         <service
             android:name=".Services.LogTileService"
